@@ -13,4 +13,6 @@ exa \
 bat \
 zsh \
 fzf \
-autojump
+autojump \
+git-extras \
+shellcheck

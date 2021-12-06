@@ -80,6 +80,9 @@ plugins=(
     web-search
     dirhistory
     alias-finder
+    aliases
+    colored-man-pages
+    isodate
 )
 
 source $ZSH/oh-my-zsh.sh
