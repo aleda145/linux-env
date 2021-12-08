@@ -112,11 +112,18 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Pure
 fpath+=$HOME/.zsh/pure
 
 autoload -U promptinit; promptinit
 prompt pure
 
+# History
+HISTSIZE=10000000
+SAVEHIST=10000000
+
+# Aliases
 alias weather="curl 'wttr.in?0M'"
 alias zsrc="source $HOME/.zshrc"
 alias bat=batcat
