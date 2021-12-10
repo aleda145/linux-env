@@ -83,6 +83,7 @@ plugins=(
     aliases
     colored-man-pages
     isodate
+    direnv
 )
 
 source $ZSH/oh-my-zsh.sh

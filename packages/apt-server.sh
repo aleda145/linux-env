@@ -15,4 +15,5 @@ zsh \
 fzf \
 autojump \
 git-extras \
-shellcheck
+shellcheck \
+direnv
