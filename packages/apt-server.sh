@@ -16,4 +16,5 @@ fzf \
 autojump \
 git-extras \
 shellcheck \
-direnv
+direnv \
+libncurses-dev
