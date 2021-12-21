@@ -129,3 +129,7 @@ alias weather="curl 'wttr.in?0M'"
 alias zsrc="source $HOME/.zshrc"
 alias bat=batcat
 alias ll="exa -la"
+
+# variables
+# To get bash variable similar to bash, zsh uses HOST, bash uses HOSTNAME
+export HOSTNAME=${HOST}
