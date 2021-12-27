@@ -17,4 +17,6 @@ autojump \
 git-extras \
 shellcheck \
 direnv \
-libncurses-dev
+libncurses-dev \
+duf \
+ripgrep
