@@ -84,6 +84,7 @@ plugins=(
     colored-man-pages
     isodate
     direnv
+    terraform
 )
 
 source $ZSH/oh-my-zsh.sh
