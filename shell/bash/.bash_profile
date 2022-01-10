@@ -9,5 +9,5 @@ export HOSTNAME
 
 # add local to path
 
-PATH=$PATH:/home/alex/.local/bin
+PATH=$PATH:/home/${USER}/.local/bin
 
