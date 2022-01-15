@@ -19,4 +19,5 @@ shellcheck \
 direnv \
 libncurses-dev \
 duf \
-ripgrep
+ripgrep \
+whois
