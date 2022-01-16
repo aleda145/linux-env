@@ -20,4 +20,5 @@ direnv \
 libncurses-dev \
 duf \
 ripgrep \
-whois
+whois \
+jq
