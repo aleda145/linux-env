@@ -21,4 +21,5 @@ libncurses-dev \
 duf \
 ripgrep \
 whois \
-jq
+jq \
+tmux
