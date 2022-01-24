@@ -17,7 +17,6 @@ autojump \
 git-extras \
 shellcheck \
 direnv \
-libncurses-dev \
 duf \
 ripgrep \
 whois \
