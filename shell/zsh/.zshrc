@@ -135,3 +135,6 @@ alias preview="fzf --preview 'batcat {} --color=always'"
 # variables
 # To get bash variable similar to bash, zsh uses HOST, bash uses HOSTNAME
 export HOSTNAME=${HOST}
+
+# PATH
+export PATH="${PATH}:${HOME}/go/bin"
