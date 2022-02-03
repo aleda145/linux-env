@@ -13,8 +13,8 @@
 [diff]
     colorMoved = default
 [user]
-	email = alex@dahl.dev
-	name = Alexander Dahl
+	email = gustav@scholin.dev
+	name = Gustav Schölin
 [core]
 	editor = code --wait
 [init]

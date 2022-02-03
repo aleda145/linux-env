@@ -2,7 +2,7 @@
 
 set -euxo pipefail
 
-if [ "$USER" = "alex" ]; then
+if [ "$USER" = "gustav" ]; then
   # Please dont use my git config :))
   cp git/.gitconfig "$HOME"/.gitconfig
 fi
