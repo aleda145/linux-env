@@ -85,6 +85,7 @@ plugins=(
     isodate
     direnv
     terraform
+    globalias
 )
 
 source $ZSH/oh-my-zsh.sh
