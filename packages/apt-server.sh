@@ -21,4 +21,6 @@ duf \
 ripgrep \
 whois \
 jq \
-tmux
+tmux \
+jo \
+jc \

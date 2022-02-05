@@ -132,7 +132,8 @@ alias zsrc="source $HOME/.zshrc"
 alias bat=batcat
 alias ll="exa -la"
 alias preview="fzf --preview 'batcat {} --color=always'"
-
+alias jso="/usr/bin/jo" # Need alias because nameconflict with autojump
+alias jsc="/usr/bin/jc" # Need alias because nameconflict with autojump
 # variables
 # To get bash variable similar to bash, zsh uses HOST, bash uses HOSTNAME
 export HOSTNAME=${HOST}
