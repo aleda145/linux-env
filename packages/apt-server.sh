@@ -24,3 +24,4 @@ jq \
 tmux \
 jo \
 jc \
+httpie \
