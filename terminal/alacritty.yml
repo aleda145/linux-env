@@ -27,7 +27,9 @@ colors:
     cyan: '#95E6CB'
     white: '#FFFFFF'
 
-background_opacity: 0.9
+window:
+   opacity: 0.9
+
 env:
   WINIT_X11_SCALE_FACTOR: "1"
 
