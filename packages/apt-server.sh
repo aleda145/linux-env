@@ -9,7 +9,6 @@ tldr \
 nmap \
 postgresql-client \
 python-is-python3 \
-exa \
 bat \
 zsh \
 fzf \
@@ -17,11 +16,18 @@ autojump \
 git-extras \
 shellcheck \
 direnv \
-duf \
-ripgrep \
 whois \
 jq \
 tmux \
 jo \
-jc \
 httpie \
+
+if [ $(uname -m) != "aarch64" ]; then
+sudo apt-get install -y \
+exa \
+duf \
+ripgrep \
+jc 
+else
+    echo "ARM architecture detected, skipping some packages"
+fi

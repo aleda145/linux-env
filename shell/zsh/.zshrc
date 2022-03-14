@@ -130,12 +130,15 @@ SAVEHIST=10000000
 alias weather="curl 'wttr.in?0M'"
 alias zsrc="source $HOME/.zshrc"
 alias bat=batcat
-alias ll="exa -la"
 alias preview="fzf --preview 'batcat {} --color=always'"
 alias jso="/usr/bin/jo" # Need alias because nameconflict with autojump
-alias jsc="/usr/bin/jc" # Need alias because nameconflict with autojump
-alias chrome="nohup ${HOME}/chrome/chrome &> ${HOME}/chrome/chrome.log &"
 
+if [ $(uname -m) != "aarch64" ]; then
+    # Should only be on main desktop, not rpi server
+    alias chrome="nohup ${HOME}/chrome/chrome &> ${HOME}/chrome/chrome.log &"
+    alias ll="exa -la"
+    alias jsc="/usr/bin/jc" # Need alias because nameconflict with autojump
+fi
 # variables
 # To get bash variable similar to bash, zsh uses HOST, bash uses HOSTNAME
 export HOSTNAME=${HOST}
