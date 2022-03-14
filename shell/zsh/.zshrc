@@ -134,6 +134,8 @@ alias ll="exa -la"
 alias preview="fzf --preview 'batcat {} --color=always'"
 alias jso="/usr/bin/jo" # Need alias because nameconflict with autojump
 alias jsc="/usr/bin/jc" # Need alias because nameconflict with autojump
+alias chrome="nohup ${HOME}/chrome/chrome &> ${HOME}/chrome/chrome.log &"
+
 # variables
 # To get bash variable similar to bash, zsh uses HOST, bash uses HOSTNAME
 export HOSTNAME=${HOST}
