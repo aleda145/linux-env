@@ -135,7 +135,7 @@ alias jso="/usr/bin/jo" # Need alias because nameconflict with autojump
 
 if [ $(uname -m) != "aarch64" ]; then
     # Should only be on main desktop, not rpi server
-    alias chrome="nohup ${HOME}/chrome/chrome &> ${HOME}/chrome/chrome.log &"
+    alias chrome="nohup ${HOME}/chrome/chrome &> ${HOME}/chrome/chrome.log & disown"
     alias ll="exa -la"
     alias jsc="/usr/bin/jc" # Need alias because nameconflict with autojump
 fi
