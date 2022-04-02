@@ -86,6 +86,7 @@ plugins=(
     direnv
     terraform
     globalias
+    alias-tips
 )
 
 source $ZSH/oh-my-zsh.sh
