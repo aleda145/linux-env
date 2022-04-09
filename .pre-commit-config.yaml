@@ -1,0 +1,21 @@
+repos:
+- repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.1.0
+  hooks:
+  - id: check-added-large-files
+  - id: check-docstring-first
+  - id: check-executables-have-shebangs
+  - id: check-json
+  - id: check-yaml
+  - id: debug-statements
+  - id: double-quote-string-fixer
+  - id: end-of-file-fixer
+  - id: requirements-txt-fixer
+  - id: trailing-whitespace
+- repo: https://github.com/jumanjihouse/pre-commit-hooks
+  rev: 2.1.5
+  hooks:
+    - id: shfmt
+    # installed with: go install mvdan.cc/sh/v3/cmd/shfmt@latest
+      args: ['-l', '-i', '2', '-ci', '-sr', '-w']
+    - id: shellcheck
