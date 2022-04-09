@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo -e "\e[31m###########################\e[0m"
+echo -e "\e[31mInstalling Packages\e[0m"
+echo -e "\e[31m###########################\e[0m"
 set -euxo pipefail
 
 sudo apt-get install -y \
