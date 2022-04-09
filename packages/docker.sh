@@ -10,19 +10,18 @@ sudo apt-get update
 
 # Packages needed
 sudo apt-get install -y \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
+  ca-certificates \
+  curl \
+  gnupg \
+  lsb-release
 
 # GPG key
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --yes --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 
-# add the key 
+# add the key
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
 
 sudo apt-get update
 
@@ -46,7 +45,7 @@ if [[ ! $(getent group docker) ]]; then
   echo "Creating docker group"
   sudo groupadd docker
 fi
-sudo usermod -aG docker $USER
+sudo usermod -aG docker "$USER"
 
 echo -e "\e[31m###########################\e[0m"
 echo -e "\e[31mAdded ${USER} to docker group!\e[0m"

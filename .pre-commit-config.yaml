@@ -6,6 +6,7 @@ repos:
   - id: check-docstring-first
   - id: check-executables-have-shebangs
   - id: check-json
+    exclude: keybindings.json
   - id: check-yaml
   - id: debug-statements
   - id: double-quote-string-fixer
@@ -19,3 +20,4 @@ repos:
     # installed with: go install mvdan.cc/sh/v3/cmd/shfmt@latest
       args: ['-l', '-i', '2', '-ci', '-sr', '-w']
     - id: shellcheck
+      exclude: .zshrc|.bashrc|.bash_profile # Skip dotfiles

@@ -71,22 +71,22 @@ export ZSH="/home/${USER}/.oh-my-zsh"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    git
-    fzf
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-    autojump
-    sudo
-    web-search
-    dirhistory
-    alias-finder
-    aliases
-    colored-man-pages
-    isodate
-    direnv
-    terraform
-    globalias
-    alias-tips
+  git
+  fzf
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+  autojump
+  sudo
+  web-search
+  dirhistory
+  alias-finder
+  aliases
+  colored-man-pages
+  isodate
+  direnv
+  terraform
+  globalias
+  alias-tips
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -120,7 +120,8 @@ source $ZSH/oh-my-zsh.sh
 # Pure
 fpath+=$HOME/.zsh/pure
 
-autoload -U promptinit; promptinit
+autoload -U promptinit
+promptinit
 prompt pure
 
 # History
@@ -134,11 +135,11 @@ alias bat=batcat
 alias preview="fzf --preview 'batcat {} --color=always'"
 alias jso="/usr/bin/jo" # Need alias because nameconflict with autojump
 
-if [ $(uname -m) != "aarch64" ]; then
-    # Should only be on main desktop, not rpi server
-    alias chrome="nohup ${HOME}/chrome/chrome &> ${HOME}/chrome/chrome.log & disown"
-    alias ll="exa -la"
-    alias jsc="/usr/bin/jc" # Need alias because nameconflict with autojump
+if [ "$(uname -m)" != "aarch64" ]; then
+  # Should only be on main desktop, not rpi server
+  alias chrome="nohup ${HOME}/chrome/chrome &> ${HOME}/chrome/chrome.log & disown"
+  alias ll="exa -la"
+  alias jsc="/usr/bin/jc" # Need alias because nameconflict with autojump
 fi
 # variables
 # To get bash variable similar to bash, zsh uses HOST, bash uses HOSTNAME
