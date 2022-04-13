@@ -140,6 +140,7 @@ if [ "$(uname -m)" != "aarch64" ]; then
   alias chrome="nohup ${HOME}/chrome/chrome &> ${HOME}/chrome/chrome.log & disown"
   alias ll="exa -la"
   alias jsc="/usr/bin/jc" # Need alias because nameconflict with autojump
+  alias update-code="wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' -O /tmp/code_latest_amd64.deb && sudo dpkg -i /tmp/code_latest_amd64.deb"
 fi
 # variables
 # To get bash variable similar to bash, zsh uses HOST, bash uses HOSTNAME
