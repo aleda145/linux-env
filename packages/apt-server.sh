@@ -30,7 +30,8 @@ if [ "$(uname -m)" != "aarch64" ]; then
     exa \
     duf \
     ripgrep \
-    jc
+    jc \
+    xcowsay
 else
   echo "ARM architecture detected, skipping some packages"
 fi
