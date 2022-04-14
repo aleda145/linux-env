@@ -1,7 +1,0 @@
-[user]
-	email = alex@dahl.dev
-	name = Alexander Dahl
-[core]
-	editor = code --wait
-[init]
-	defaultBranch = main
