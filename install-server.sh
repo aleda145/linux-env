@@ -3,7 +3,7 @@ set -e
 echo -e "\e[31m###########################\e[0m"
 echo -e "\e[31minstalling packages\e[0m"
 echo -e "\e[31m###########################\e[0m"
-./packages/apt-server.sh
+./packages/packages.sh
 
 echo -e "\e[31m###########################\e[0m"
 echo -e "\e[31minstalling ohmyzsh\e[0m"
