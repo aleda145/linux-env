@@ -1,0 +1,22 @@
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+  echo 'Usage: replace-all old_word new_word'
+  exit
+fi
+if ! command -v rg &> /dev/null; then
+  echo "rg could not be found, install it!"
+  exit
+fi
+
+rg "$1"
+
+read -p "Replace all matches with $2? (y/n): " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+  rg "$1" --files-with-matches | xargs sed -i "s/$1/$2/"
+else
+  echo "Exiting"
+  exit
+fi
+echo "Replace done!"

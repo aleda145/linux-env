@@ -26,5 +26,10 @@ echo -e "\e[31madding .zshrc and .gitconfig\e[0m"
 echo -e "\e[31m###########################\e[0m"
 ./copy-config.sh
 
+echo -e "\e[31m###########################\e[0m"
+echo -e "\e[31mAdding utils\e[0m"
+echo -e "\e[31m###########################\e[0m"
+./copy-utils.sh
+
 echo -e "\e[32mFinished! 🚀🚀\e[0m"
 echo -e "Restart your terminal to make changes take effect."
