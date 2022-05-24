@@ -8,4 +8,8 @@ if [ "$USER" = "gustav" ]; then
 fi
 
 cp "$HOME"/.zshrc "$HOME"/.zshrc_backup
-cp "$PWD"/shell/zsh/.zshrc "$HOME"/.zshrc
+if [[ $(uname) = "Darwin" ]]; then
+  cp "$PWD"/shell/zsh/.zshrc-mac "$HOME"/.zshrc
+else
+  cp "$PWD"/shell/zsh/.zshrc "$HOME"/.zshrc
+fi
