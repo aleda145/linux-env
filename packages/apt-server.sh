@@ -23,7 +23,8 @@ sudo apt-get install -y \
   jq \
   tmux \
   jo \
-  httpie
+  httpie \
+  vim
 
 if [ "$(uname -m)" != "aarch64" ]; then
   sudo apt-get install -y \
