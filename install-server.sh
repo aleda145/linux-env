@@ -31,5 +31,10 @@ echo -e "\e[31mAdding utils\e[0m"
 echo -e "\e[31m###########################\e[0m"
 ./copy-utils.sh
 
+echo -e "\e[31m###########################\e[0m"
+echo -e "\e[31mAdding oh my tmux\e[0m"
+echo -e "\e[31m###########################\e[0m"
+./shell/tmux.sh
+
 echo -e "\e[32mFinished! 🚀🚀\e[0m"
 echo -e "Restart your terminal to make changes take effect."
