@@ -10,4 +10,5 @@ echo "setw -g mouse on
 set -g @plugin 'tmux-plugins/tmux-resurrect'
 set -g @plugin 'laktak/extrakto'
 set -g @plugin 'tmux-plugins/tmux-continuum'
+set -g @continuum-restore 'on'
 " >> "${HOME}/.tmux.conf.local"
