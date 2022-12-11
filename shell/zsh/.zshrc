@@ -149,6 +149,7 @@ export HOSTNAME=${HOST}
 
 # PATH
 export PATH="${PATH}:${HOME}/go/bin"
+export PATH="${PATH}:/usr/local/go/bin"
 
 # flyctl
 export FLYCTL_INSTALL="${HOME}/.fly"
