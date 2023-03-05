@@ -135,8 +135,7 @@ SAVEHIST=10000000
 # Aliases
 alias weather="curl 'wttr.in?0M'"
 alias zsrc="source $HOME/.zshrc"
-alias bat=batcat
-alias preview="fzf --preview 'batcat {} --color=always'"
+alias preview="fzf --preview 'bat {} --color=always'"
 alias jso="/usr/bin/jo" # Need alias because nameconflict with autojump
 
 if [ "$(uname -m)" != "aarch64" ]; then
