@@ -128,6 +128,12 @@ autoload -U promptinit
 promptinit
 prompt pure
 
+# zoxide
+eval "$(zoxide init zsh)"
+
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # History
 HISTSIZE=10000000
 SAVEHIST=10000000

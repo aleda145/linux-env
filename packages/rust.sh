@@ -10,3 +10,4 @@ source "$HOME/.cargo/env" # Source so we can go ahead and install cargoes direct
 cargo install bottom
 cargo install du-dust
 cargo install gping
+cargo install zoxide
