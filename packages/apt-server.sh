@@ -14,7 +14,6 @@ sudo apt-get install -y \
   python-is-python3 \
   bat \
   zsh \
-  fzf \
   autojump \
   git-extras \
   shellcheck \
