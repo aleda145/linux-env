@@ -8,3 +8,5 @@ packages/terraform.sh
 packages/broot.sh
 packages/delta.sh
 packages/dog.sh
+packages/rust.sh
+packages/fzf.sh
