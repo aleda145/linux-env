@@ -5,6 +5,20 @@ echo -e "\e[31mInstalling Packages\e[0m"
 echo -e "\e[31m###########################\e[0m"
 set -euxo pipefail
 
+# essentials
+sudo apt-get install -y \
+  build-essential \
+  zlib1g-dev \
+  libffi-dev \
+  libssl-dev \
+  libbz2-dev \
+  libreadline-dev \
+  libsqlite3-dev \
+  liblzma-dev \
+  libncurses-dev \
+  tk-dev \
+
+# nice packages:
 sudo apt-get install -y \
   htop \
   neofetch \
