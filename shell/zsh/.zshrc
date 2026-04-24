@@ -143,6 +143,7 @@ alias weather="curl 'wttr.in?0M'"
 alias zsrc="source $HOME/.zshrc"
 alias preview="fzf --preview 'bat {} --color=always'"
 alias jso="/usr/bin/jo" # Need alias because nameconflict with autojump
+alias gups="git upstream"
 
 if [ "$(uname -m)" != "aarch64" ]; then
   # Should only be on main desktop, not rpi server
